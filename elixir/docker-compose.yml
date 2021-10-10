@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  elixir-dev:
+    image: elixir:latest
+    container_name: elixir-dev
+    working_dir: /app
+    volumes:
+      - ./:/app
+    tty: true
+    environment:
+      - USER=`${USER}`
