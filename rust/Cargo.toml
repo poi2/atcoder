@@ -1,0 +1,79 @@
+[package]
+name = "atcoder"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proconio = "0.3.6"
+itertools = "*"
+petgraph = "0.5.0"
+
+[[bin]]
+name = "abc218_e"
+path = "src/abc218_e.rs"
+
+[[bin]]
+name = "abc200_d"
+path = "src/abc200_d.rs"
+
+[[bin]]
+name = "abc142_c"
+path = "src/abc142_c.rs"
+
+[[bin]]
+name = "typical90_d"
+path = "src/typical90_d.rs"
+
+[[bin]]
+name = "abc219_d"
+path = "src/abc219_d.rs"
+
+[[bin]]
+name = "abc132_c"
+path = "src/abc132_c.rs"
+
+[[bin]]
+name = "abc138_d"
+path = "src/abc138_d.rs"
+
+[[bin]]
+name = "joi2009ho_b"
+path = "src/joi2009ho_b.rs"
+
+[[bin]]
+name = "abc178_a"
+path = "src/abc178_a.rs"
+
+[[bin]]
+name = "abc152_a"
+path = "src/abc152_a.rs"
+
+[[bin]]
+name = "abc170_b"
+path = "src/abc170_b.rs"
+
+[[bin]]
+name = "abc170_a"
+path = "src/abc170_a.rs"
+
+[[bin]]
+name = "abc185_a"
+path = "src/abc185_a.rs"
+
+[[bin]]
+name = "abc218_d"
+path = "src/abc218_d.rs"
+
+[[bin]]
+name = "abc128_c"
+path = "src/abc128_c.rs"
+
+[[bin]]
+name = "abc002_4"
+path = "src/abc002_4.rs"
+
+[[bin]]
+name = "abc145_c"
+path = "src/abc145_c.rs"
