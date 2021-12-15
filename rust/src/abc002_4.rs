@@ -5,7 +5,7 @@ use std::collections::HashSet;
 
 fn main() {
     input! {
-        n: usize,
+        _n: usize,
         m: usize,
         xy: [(usize, usize); m]
     }
