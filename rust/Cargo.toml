@@ -52,10 +52,6 @@ name = "abc226_a"
 path = "src/abc226_a.rs"
 
 [[bin]]
-name = "abc226_b"
-path = "src/abc226_b.rs"
-
-[[bin]]
 name = "abc226_c"
 path = "src/abc226_c.rs"
 
