@@ -9,6 +9,67 @@ edition = "2018"
 proconio = "0.3.6"
 itertools = "*"
 petgraph = "0.5.0"
+num-integer = "*"
+
+[[bin]]
+name = "abc222_d"
+path = "src/abc222_d.rs"
+
+[[bin]]
+name = "abc222_c"
+path = "src/abc222_c.rs"
+
+[[bin]]
+name = "abc222_b"
+path = "src/abc222_b.rs"
+
+[[bin]]
+name = "abc222_a"
+path = "src/abc222_a.rs"
+
+[[bin]]
+name = "abc225_a"
+path = "src/abc225_a.rs"
+
+[[bin]]
+name = "abc225_b"
+path = "src/abc225_b.rs"
+
+[[bin]]
+name = "abc225_c"
+path = "src/abc225_c.rs"
+
+[[bin]]
+name = "abc225_d"
+path = "src/abc225_d.rs"
+
+[[bin]]
+name = "abc225_e"
+path = "src/abc225_e.rs"
+
+[[bin]]
+name = "abc226_a"
+path = "src/abc226_a.rs"
+
+[[bin]]
+name = "abc226_b"
+path = "src/abc226_b.rs"
+
+[[bin]]
+name = "abc226_c"
+path = "src/abc226_c.rs"
+
+[[bin]]
+name = "abc226_d"
+path = "src/abc226_d.rs"
+
+[[bin]]
+name = "abc228_d"
+path = "src/abc228_d.rs"
+
+[[bin]]
+name = "abc229_a"
+path = "src/abc229_a.rs"
 
 [[bin]]
 name = "abc218_e"
@@ -23,8 +84,48 @@ name = "abc142_c"
 path = "src/abc142_c.rs"
 
 [[bin]]
+name = "typical90_b"
+path = "src/typical90_b.rs"
+
+[[bin]]
+name = "typical90_c"
+path = "src/typical90_c.rs"
+
+[[bin]]
 name = "typical90_d"
 path = "src/typical90_d.rs"
+
+[[bin]]
+name = "typical90_g"
+path = "src/typical90_g.rs"
+
+[[bin]]
+name = "typical90_j"
+path = "src/typical90_j.rs"
+
+[[bin]]
+name = "typical90_n"
+path = "src/typical90_n.rs"
+
+[[bin]]
+name = "typical90_p"
+path = "src/typical90_p.rs"
+
+[[bin]]
+name = "typical90_r"
+path = "src/typical90_r.rs"
+
+[[bin]]
+name = "typical90_t"
+path = "src/typical90_t.rs"
+
+[[bin]]
+name = "typical90_v"
+path = "src/typical90_v.rs"
+
+[[bin]]
+name = "typical90_x"
+path = "src/typical90_x.rs"
 
 [[bin]]
 name = "abc219_d"
