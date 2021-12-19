@@ -1,8 +1,7 @@
 // https://atcoder.jp/contests/typical90/tasks/typical90_v
-
 // num-integer crate を使う場合 num_integer のようにアンダースコアになる？
 // https://docs.rs/num-integer/0.1.44/num_integer/fn.gcd.html
-
+#![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
 use proconio::input;
 use itertools::Itertools;
 
