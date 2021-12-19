@@ -124,6 +124,10 @@ name = "typical90_x"
 path = "src/typical90_x.rs"
 
 [[bin]]
+name = "typical90_z"
+path = "src/typical90_z.rs"
+
+[[bin]]
 name = "abc219_d"
 path = "src/abc219_d.rs"
 
