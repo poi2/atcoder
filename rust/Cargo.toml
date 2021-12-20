@@ -12,6 +12,66 @@ petgraph = "0.5.0"
 num-integer = "*"
 
 [[bin]]
+name = "abc002_4"
+path = "src/abc002_4.rs"
+
+[[bin]]
+name = "abc128_c"
+path = "src/abc128_c.rs"
+
+[[bin]]
+name = "abc132_c"
+path = "src/abc132_c.rs"
+
+[[bin]]
+name = "abc138_d"
+path = "src/abc138_d.rs"
+
+[[bin]]
+name = "abc142_c"
+path = "src/abc142_c.rs"
+
+[[bin]]
+name = "abc145_c"
+path = "src/abc145_c.rs"
+
+[[bin]]
+name = "abc152_a"
+path = "src/abc152_a.rs"
+
+[[bin]]
+name = "abc170_b"
+path = "src/abc170_b.rs"
+
+[[bin]]
+name = "abc170_a"
+path = "src/abc170_a.rs"
+
+[[bin]]
+name = "abc178_a"
+path = "src/abc178_a.rs"
+
+[[bin]]
+name = "abc185_a"
+path = "src/abc185_a.rs"
+
+[[bin]]
+name = "abc200_d"
+path = "src/abc200_d.rs"
+
+[[bin]]
+name = "abc218_d"
+path = "src/abc218_d.rs"
+
+[[bin]]
+name = "abc218_e"
+path = "src/abc218_e.rs"
+
+[[bin]]
+name = "abc219_d"
+path = "src/abc219_d.rs"
+
+[[bin]]
 name = "abc222_d"
 path = "src/abc222_d.rs"
 
@@ -68,18 +128,6 @@ name = "abc229_a"
 path = "src/abc229_a.rs"
 
 [[bin]]
-name = "abc218_e"
-path = "src/abc218_e.rs"
-
-[[bin]]
-name = "abc200_d"
-path = "src/abc200_d.rs"
-
-[[bin]]
-name = "abc142_c"
-path = "src/abc142_c.rs"
-
-[[bin]]
 name = "typical90_b"
 path = "src/typical90_b.rs"
 
@@ -127,54 +175,7 @@ path = "src/typical90_x.rs"
 name = "typical90_z"
 path = "src/typical90_z.rs"
 
-[[bin]]
-name = "abc219_d"
-path = "src/abc219_d.rs"
-
-[[bin]]
-name = "abc132_c"
-path = "src/abc132_c.rs"
-
-[[bin]]
-name = "abc138_d"
-path = "src/abc138_d.rs"
 
 [[bin]]
 name = "joi2009ho_b"
 path = "src/joi2009ho_b.rs"
-
-[[bin]]
-name = "abc178_a"
-path = "src/abc178_a.rs"
-
-[[bin]]
-name = "abc152_a"
-path = "src/abc152_a.rs"
-
-[[bin]]
-name = "abc170_b"
-path = "src/abc170_b.rs"
-
-[[bin]]
-name = "abc170_a"
-path = "src/abc170_a.rs"
-
-[[bin]]
-name = "abc185_a"
-path = "src/abc185_a.rs"
-
-[[bin]]
-name = "abc218_d"
-path = "src/abc218_d.rs"
-
-[[bin]]
-name = "abc128_c"
-path = "src/abc128_c.rs"
-
-[[bin]]
-name = "abc002_4"
-path = "src/abc002_4.rs"
-
-[[bin]]
-name = "abc145_c"
-path = "src/abc145_c.rs"
