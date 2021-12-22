@@ -183,6 +183,9 @@ path = "src/typical90_x.rs"
 name = "typical90_z"
 path = "src/typical90_z.rs"
 
+[[bin]]
+name = "typical90_aa"
+path = "src/typical90_aa.rs"
 
 [[bin]]
 name = "joi2009ho_b"
