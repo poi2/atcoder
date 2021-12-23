@@ -136,6 +136,10 @@ name = "abc232_b"
 path = "src/abc232_b.rs"
 
 [[bin]]
+name = "joi2009ho_b"
+path = "src/joi2009ho_b.rs"
+
+[[bin]]
 name = "typical90_b"
 path = "src/typical90_b.rs"
 
@@ -188,5 +192,5 @@ name = "typical90_aa"
 path = "src/typical90_aa.rs"
 
 [[bin]]
-name = "joi2009ho_b"
-path = "src/joi2009ho_b.rs"
+name = "typical90_ab"
+path = "src/typical90_ab.rs"
