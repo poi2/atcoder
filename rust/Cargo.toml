@@ -198,3 +198,7 @@ path = "src/typical90_ab.rs"
 [[bin]]
 name = "typical90_af"
 path = "src/typical90_af.rs"
+
+[[bin]]
+name = "typical90_ag"
+path = "src/typical90_ag.rs"
