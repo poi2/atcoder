@@ -32,10 +32,10 @@ fn main() {
     let ans = colors
         .iter()
         .enumerate()
-        .filter(|&(_idx, value)| *value == color )
+        .filter(|&(_idx, value)| *value == color)
         .map(|(idx, _value)| (idx + 1).to_string())
         .collect::<Vec<String>>()
-        .drain(0..n/2)
+        .drain(0..n / 2)
         .collect::<Vec<String>>()
         .join(" ");
 

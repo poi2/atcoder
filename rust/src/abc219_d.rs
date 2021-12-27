@@ -16,8 +16,8 @@ fn main() {
     dp[0][0][0] = 0;
     for i in 0..n {
         let (a, b) = list[i];
-        for j in 0..(x+1) {
-            for k in 0..(y+1) {
+        for j in 0..(x + 1) {
+            for k in 0..(y + 1) {
                 let ux = x.min(a + j);
                 let uy = y.min(b + k);
 
@@ -29,10 +29,6 @@ fn main() {
         }
     }
 
-    let ans = if dp[n][x][y] == max {
-        -1
-    } else {
-        dp[n][x][y]
-    };
+    let ans = if dp[n][x][y] == max { -1 } else { dp[n][x][y] };
     println!("{}", ans);
 }

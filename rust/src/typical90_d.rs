@@ -1,7 +1,7 @@
 // https://atcoder.jp/contests/typical90/tasks/typical90_d
 
-use proconio::input;
 use itertools::Itertools;
+use proconio::input;
 
 fn main() {
     input! {
@@ -25,6 +25,6 @@ fn main() {
         for j in 0..w {
             ans[j] = lines[i] + colums[j] - a[i][j];
         }
-        println!("{}", ans.iter().map(|x| x.to_string()).join(" ") );
+        println!("{}", ans.iter().map(|x| x.to_string()).join(" "));
     }
 }

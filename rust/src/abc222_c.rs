@@ -2,16 +2,16 @@
 
 // use itertools::Itertools;
 use proconio::input;
-use proconio::marker::{Chars};
+use proconio::marker::Chars;
 
 fn vs(a: char, b: char) -> i32 {
     if a == b {
-        return 0
+        return 0;
     }
     if (a == 'G' && b == 'C') || (a == 'C' && b == 'P') || (a == 'P' && b == 'G') {
-        return 1
+        return 1;
     }
-    return -1
+    return -1;
 }
 
 fn main() {
@@ -31,11 +31,11 @@ fn main() {
 
     for i in 0..m {
         for k in 0..n {
-            let resp = vs(a[k*2].2[i], a[k*2+1].2[i]);
+            let resp = vs(a[k * 2].2[i], a[k * 2 + 1].2[i]);
             if resp == 1 {
-                a[k*2].0 -= 1;
+                a[k * 2].0 -= 1;
             } else if resp == -1 {
-                a[k*2+1].0 -= 1;
+                a[k * 2 + 1].0 -= 1;
             }
         }
         a.sort();

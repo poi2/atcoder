@@ -27,7 +27,7 @@ fn main() {
     // スイッチが付いている状態の 2 で割ったあまりが pi と一致すれば、電球 i は付いている状態
 
     let mut ans: u32 = 0;
-    for bit in 0..(1<<n) {
+    for bit in 0..(1 << n) {
         let mut ac = true;
         for mi in 0..m {
             if ac {

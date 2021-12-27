@@ -8,7 +8,9 @@ fn main() {
     }
     let mut min: i32 = 100;
     for ai in a {
-        if ai < min { min = ai; }
+        if ai < min {
+            min = ai;
+        }
     }
     println!("{}", min);
 }

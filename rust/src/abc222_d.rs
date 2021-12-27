@@ -16,13 +16,13 @@ fn main() {
     for i in 0..n {
         let mut next_dp: [usize; 3001] = [0; 3001];
         let mut count_memo: usize = 0;
-        for j in an[i]..bn[i]+1 {
+        for j in an[i]..bn[i] + 1 {
             let mut count: usize = 0;
-            let old = if i == 0 { 0 } else { an[i-1] };
+            let old = if i == 0 { 0 } else { an[i - 1] };
             if count_memo > 0 {
                 count = (count_memo + dp[j]) % div;
             } else {
-                for k in old..j+1 {
+                for k in old..j + 1 {
                     count = (count + dp[k]) % div;
                 }
             }

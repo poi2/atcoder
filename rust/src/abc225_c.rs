@@ -17,11 +17,6 @@ fn main() {
             }
         }
     }
-    let ans_str =
-        if ans == true {
-            "Yes"
-        } else {
-            "No"
-        };
+    let ans_str = if ans == true { "Yes" } else { "No" };
     println!("{}", ans_str);
 }

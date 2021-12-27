@@ -1,7 +1,7 @@
 #![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
-use proconio::input;
-use itertools::Itertools;
 use itertools::enumerate;
+use itertools::Itertools;
+use proconio::input;
 
 fn is_good_order(order: &Vec<usize>, bads: &Vec<Vec<usize>>) -> bool {
     for i in 0..order.len() - 1 {
@@ -21,8 +21,8 @@ fn main() {
     }
     let mut bads = vec![vec![]; n + 1];
     for (x, y) in xyn {
-        bads[x-1].push(y-1);
-        bads[y-1].push(x-1);
+        bads[x - 1].push(y - 1);
+        bads[y - 1].push(x - 1);
     }
 
     // let good_orders = (0..n)
@@ -30,7 +30,6 @@ fn main() {
     //     .filter(|order|
     //         is_good_order(order.to_vec(), bads.to_vec())
     //     );
-
 
     // let mut min = std::i32::MAX as usize;
     // for order in good_orders {
@@ -52,18 +51,11 @@ fn main() {
     let max = std::i64::MAX as usize;
     let ans = (0..n)
         .permutations(n)
-        .filter(|order|
-            is_good_order(&order, &bads))
-        .fold(max, |min, order|
-            {
-                let sum = order
-                    .iter()
-                    .enumerate()
-                    .map(|(j, &i)| aij[i][j] )
-                    .sum();
-                min.min(sum)
-            }
-        );
+        .filter(|order| is_good_order(&order, &bads))
+        .fold(max, |min, order| {
+            let sum = order.iter().enumerate().map(|(j, &i)| aij[i][j]).sum();
+            min.min(sum)
+        });
 
     if ans != max {
         println!("{}", ans);

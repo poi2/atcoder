@@ -26,7 +26,7 @@ fn main() {
                 let ans1 = b - x;
                 let ans2 = y - b;
                 println!("{}", ans1.min(ans2));
-            },
+            }
         }
     }
 }

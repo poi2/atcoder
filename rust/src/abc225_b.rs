@@ -17,11 +17,6 @@ fn main() {
             }
         }
     }
-    let ans =
-        if anses.contains(&true) {
-            "Yes"
-        } else {
-            "No"
-        };
+    let ans = if anses.contains(&true) { "Yes" } else { "No" };
     println!("{}", ans);
 }

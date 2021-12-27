@@ -1,7 +1,7 @@
 // https://atcoder.jp/contests/abc218/tasks/abc218_e
 
-use proconio::input;
 use petgraph::unionfind::UnionFind;
+use proconio::input;
 
 fn main() {
     input! {

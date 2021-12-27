@@ -18,13 +18,11 @@ fn main() {
         mut xyn: [(i64, i64); n],
     }
     // ORDER BY left of 7 ASC
-    xyn.sort_unstable_by(|a, b|
-        arg_cmp(left_of(a), left_of(b))
-    );
+    xyn.sort_unstable_by(|a, b| arg_cmp(left_of(a), left_of(b)));
 
     let mut ans = 0;
     let mut prev = (1, 0);
-    for xy in  xyn {
+    for xy in xyn {
         // botom of xy >= left of prev => take xy
         if arg_cmp(bottom_of(&xy), left_of(&prev)) != Ordering::Less {
             prev = xy;

@@ -1,6 +1,6 @@
+use itertools::Itertools;
 #[warn(unused_imports)]
 use proconio::input;
-use itertools::Itertools;
 use std::collections::VecDeque;
 
 fn bfs(n: usize, start: usize, list: &Vec<Vec<usize>>) -> (usize, i64) {

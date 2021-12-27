@@ -4,12 +4,12 @@ use proconio::input;
 
 fn round_wheel_pos(hight: f64, round_time: f64, time: f64) -> (f64, f64) {
     let rad = time / round_time * 2.0 * std::f64::consts::PI;
-    return (hight * rad.sin() * -1.0, hight - hight * rad.cos())
+    return (hight * rad.sin() * -1.0, hight - hight * rad.cos());
 }
 
 // NOTE x.atan2(y) => radian
 //      角度にする場合は radian * 180 / PI => 角度
-fn rad(x: f64, y: f64, z:f64) -> f64 {
+fn rad(x: f64, y: f64, z: f64) -> f64 {
     let xy = (x.powf(2.0) + y.powf(2.0)).sqrt();
     z.atan2(xy) * 180.0 / std::f64::consts::PI
 }

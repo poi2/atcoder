@@ -67,5 +67,5 @@ fn main() {
         vec.append(&mut vec![ans.len()]);
         vec.append(&mut ans);
         println!("{}", vec.into_iter().join(" "));
-    };
+    }
 }

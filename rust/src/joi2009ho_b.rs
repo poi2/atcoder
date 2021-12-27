@@ -18,9 +18,10 @@ fn main() {
     for sid in ordre_list {
         let near_idx = &store_list.binary_search(&sid);
         match near_idx {
-            Ok(_idx) => {}, // 店舗と配送先が一致した場合、距離を足さない
-            Err(idx) => { // idx は &usize なので、値が欲しい場合 *idx とする
-                let diff_left  = sid - store_list[idx-1]; // &size + i32 は　usize + i32 に値に変換される
+            Ok(_idx) => {} // 店舗と配送先が一致した場合、距離を足さない
+            Err(idx) => {
+                // idx は &usize なので、値が欲しい場合 *idx とする
+                let diff_left = sid - store_list[idx - 1]; // &size + i32 は　usize + i32 に値に変換される
                 let diff_right = store_list[*idx] - sid;
                 let diff = if diff_left < diff_right {
                     diff_left
@@ -28,7 +29,7 @@ fn main() {
                     diff_right
                 };
                 dist += diff;
-            },
+            }
         }
     }
     println!("{}", dist);

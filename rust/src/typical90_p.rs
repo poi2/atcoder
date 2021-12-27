@@ -15,7 +15,7 @@ fn main() {
 
     let mut ans = 10000;
 
-    for i in 0..=n/a {
+    for i in 0..=n / a {
         let max_j = (n - a * i) / b;
         for j in 0..=max_j {
             let rem = n - (a * i + b * j);
@@ -28,4 +28,3 @@ fn main() {
 
     println!("{}", ans);
 }
-

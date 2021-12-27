@@ -14,7 +14,7 @@ fn main() {
     }
     let mut ans: usize = 0;
     for i in 0..n {
-        for j in i+1..n {
+        for j in i + 1..n {
             if !(points[i].0 == points[j].0 || points[i].1 == points[j].1) {
                 let p3 = (points[i].0, points[j].1);
                 let p4 = (points[j].0, points[i].1);

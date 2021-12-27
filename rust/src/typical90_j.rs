@@ -13,15 +13,14 @@ fn main() {
     let mut cum_sum_b: Vec<usize> = vec![0; n + 1];
 
     for i in 0..n {
-        let (a, b) =
-            if cp[i].0 == 1 {
-                (cp[i].1, 0)
-            } else {
-                (0, cp[i].1)
-            };
+        let (a, b) = if cp[i].0 == 1 {
+            (cp[i].1, 0)
+        } else {
+            (0, cp[i].1)
+        };
 
-        cum_sum_a[i+1] = cum_sum_a[i] + a;
-        cum_sum_b[i+1] = cum_sum_b[i] + b;
+        cum_sum_a[i + 1] = cum_sum_a[i] + a;
+        cum_sum_b[i + 1] = cum_sum_b[i] + b;
     }
 
     for i in 0..q {

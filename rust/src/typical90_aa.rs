@@ -1,6 +1,6 @@
 #![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
-use proconio::input;
 use itertools::Itertools;
+use proconio::input;
 use std::collections::HashMap;
 
 fn main() {

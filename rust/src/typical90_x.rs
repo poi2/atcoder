@@ -12,11 +12,6 @@ fn main() {
     for i in 0..n {
         k -= (an[i] - bn[i]).abs();
     }
-    let ans =
-        if k % 2 == 0 && k >= 0 {
-            "Yes"
-        } else {
-            "No"
-        };
+    let ans = if k % 2 == 0 && k >= 0 { "Yes" } else { "No" };
     println!("{}", ans);
 }

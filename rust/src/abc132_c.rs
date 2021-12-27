@@ -8,7 +8,7 @@ fn main() {
         mut d: [usize; n],
     }
     d.sort();
-    let a = d[n/2-1];
-    let b = d[n/2];
+    let a = d[n / 2 - 1];
+    let b = d[n / 2];
     println!("{}", b - a);
 }

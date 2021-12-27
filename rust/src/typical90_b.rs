@@ -5,7 +5,7 @@ fn main() {
         n: usize,
     };
     let mut ans = vec![];
-    for bits in 0..1<<n {
+    for bits in 0..1 << n {
         let mut counter = 0;
         let mut valid = true;
         for i in 0..n {

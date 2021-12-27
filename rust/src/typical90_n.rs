@@ -11,9 +11,6 @@ fn main() {
     an.sort();
     bn.sort();
 
-    let ans: i64 = (0..n)
-        .fold(0, |acc: i64, i: usize|
-            acc + ((an[i] - bn[i])).abs()
-        );
+    let ans: i64 = (0..n).fold(0, |acc: i64, i: usize| acc + (an[i] - bn[i]).abs());
     println!("{}", ans);
 }

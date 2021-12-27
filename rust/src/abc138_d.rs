@@ -3,7 +3,13 @@
 use itertools::Itertools;
 use proconio::input;
 
-fn dfs(idx: usize, pre_idx: usize, tree: &Vec<Vec<usize>>, cost: &mut Vec<usize>, used: &mut Vec<bool>) {
+fn dfs(
+    idx: usize,
+    pre_idx: usize,
+    tree: &Vec<Vec<usize>>,
+    cost: &mut Vec<usize>,
+    used: &mut Vec<bool>,
+) {
     used[idx] = true;
     if pre_idx != 2147483648 {
         cost[idx] += cost[pre_idx];
@@ -22,13 +28,13 @@ fn main() {
     }
 
     let mut tree: Vec<Vec<usize>> = vec![Vec::new(); n];
-    for _ in 0..n-1 {
+    for _ in 0..n - 1 {
         input! {
             a: usize,
             b: usize,
         }
-        tree[a-1].push(b-1);
-        tree[b-1].push(a-1);
+        tree[a - 1].push(b - 1);
+        tree[b - 1].push(a - 1);
         // 双方向で繋がっていて、a, b のどちらが木の根側なのかは分からない
         // なので、双方向に繋がっているという情報を持ち、検索済みの葉は再計算しないようにする
     }
@@ -39,7 +45,7 @@ fn main() {
             p: usize,
             x: usize,
         }
-        cost[p-1] += x;
+        cost[p - 1] += x;
     }
 
     let mut used = vec![false; n];
