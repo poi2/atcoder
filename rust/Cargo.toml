@@ -10,6 +10,7 @@ proconio = "0.3.6"
 itertools = "*"
 petgraph = "0.5.0"
 num-integer = "*"
+num = "0.4.0"
 
 [[bin]]
 name = "abc002_4"
@@ -214,3 +215,7 @@ path = "src/typical90_ag.rs"
 [[bin]]
 name = "typical90_ah"
 path = "src/typical90_ah.rs"
+
+[[bin]]
+name = "typical90_al"
+path = "src/typical90_al.rs"
