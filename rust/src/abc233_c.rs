@@ -1,7 +1,7 @@
 #![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
-use proconio::input;
-use itertools::Itertools;
 use itertools::iproduct;
+use itertools::Itertools;
+use proconio::input;
 
 // fn dfs(i: usize, prod: usize, goal: usize, bag_size: usize, aij: &Vec<Vec<usize>>, ans: &mut usize) {
 //     if i == bag_size {
@@ -40,7 +40,7 @@ fn main() {
         bag_size: usize,
         goal: u128,
     }
-    let mut aij= vec![];
+    let mut aij = vec![];
 
     for _ in 0..bag_size {
         input! {

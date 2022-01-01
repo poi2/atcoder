@@ -1,5 +1,3 @@
-
-
 fn main() {
     // let n = 1048576;
     // input! {
