@@ -13,18 +13,32 @@ fn main() {
     // println!("{:?} {}", gaps, ans);
 
     for (rawl, rawr, v) in qs {
-        if rawl > 1 {
-            let l = rawl - 2;
+        // https://doc.rust-lang.org/std/primitive.usize.html#method.checked_sub
+        if let Some(l) = rawl.checked_sub(2) {
             ans -= gaps[l].abs();
             gaps[l] += v;
             ans += gaps[l].abs();
         }
-        if rawr < n {
-            let r = rawr - 1;
-            ans -= gaps[r].abs();
-            gaps[r] -= v;
-            ans += gaps[r].abs();
+        // if rawl > 1 {
+        //     let l = rawl - 2;
+        //     ans -= gaps[l].abs();
+        //     gaps[l] += v;
+        //     ans += gaps[l].abs();
+        // }
+
+        // https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get_mut
+        if let Some(g) = gaps.get_mut(rawr - 1) {
+            ans -= g.abs();
+            *g -= v;
+            ans += g.abs();
         }
+        // if rawr < n {
+        //     let r = rawr - 1;
+        //     ans -= gaps[r].abs();
+        //     gaps[r] -= v;
+        //     ans += gaps[r].abs();
+        // }
+
         // println!("{:?} {}", gaps, ans);
 
         println!("{}", ans);
