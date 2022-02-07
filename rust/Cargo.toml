@@ -157,6 +157,26 @@ name = "abc236_d"
 path = "src/abc236_d.rs"
 
 [[bin]]
+name = "abc238_a"
+path = "src/abc238_a.rs"
+
+[[bin]]
+name = "abc238_b"
+path = "src/abc238_b.rs"
+
+[[bin]]
+name = "abc238_c"
+path = "src/abc238_c.rs"
+
+[[bin]]
+name = "abc238_d"
+path = "src/abc238_d.rs"
+
+[[bin]]
+name = "abc238_e"
+path = "src/abc238_e.rs"
+
+[[bin]]
 name = "joi2009ho_b"
 path = "src/joi2009ho_b.rs"
 
