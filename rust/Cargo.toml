@@ -11,6 +11,7 @@ itertools = "*"
 petgraph = "0.5.0"
 num-integer = "*"
 num = "0.4.0"
+regex = "*"
 
 [[bin]]
 name = "abc002_4"
@@ -155,6 +156,18 @@ path = "src/abc236_c.rs"
 [[bin]]
 name = "abc236_d"
 path = "src/abc236_d.rs"
+
+[[bin]]
+name = "abc237_a"
+path = "src/abc237_a.rs"
+
+[[bin]]
+name = "abc237_b"
+path = "src/abc237_b.rs"
+
+[[bin]]
+name = "abc237_c"
+path = "src/abc237_c.rs"
 
 [[bin]]
 name = "abc238_a"
