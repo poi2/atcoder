@@ -146,8 +146,8 @@ name = "abc233_c"
 path = "src/abc233_c.rs"
 
 [[bin]]
-name = "abc233_d"
-path = "src/abc233_d.rs"
+name = "abc233_e"
+path = "src/abc233_e.rs"
 
 [[bin]]
 name = "abc234_d"
