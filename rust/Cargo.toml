@@ -12,6 +12,7 @@ petgraph = "0.5.0"
 num-integer = "*"
 num = "0.4.0"
 regex = "*"
+num-bigint = "*"
 
 [[bin]]
 name = "abc002_4"

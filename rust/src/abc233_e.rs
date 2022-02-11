@@ -1,6 +1,7 @@
 #![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
 use proconio::input;
 use itertools::Itertools;
+use num_bigint::BigUint;
 
 fn main() {
     input! {
@@ -35,4 +36,23 @@ fn main() {
         .map(|i| i.to_string())
         .join("");
     println!("{}", ans);
+}
+
+// 多倍長演算を試したが TLE になった
+// x は 10**500,000 なので、多倍長の四則演算を 500,000 回行うと 2sec を超えてしまうようだ
+fn main2() {
+    input! {
+        mut s: String,
+    }
+    let mut x = BigUint::parse_bytes(s.as_bytes(), 10).unwrap();
+    let mut ans = BigUint::parse_bytes(b"0", 10).unwrap();
+    let zero = BigUint::parse_bytes(b"0", 10).unwrap();
+    let two = BigUint::parse_bytes(b"10", 10).unwrap();
+
+    while x > zero {
+        ans += &x;
+        x = &x / &two;
+    }
+
+    println!("{}", ans.to_str_radix(10));
 }
