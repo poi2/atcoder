@@ -135,6 +135,10 @@ name = "abc230_d"
 path = "src/abc230_d.rs"
 
 [[bin]]
+name = "abc230_e"
+path = "src/abc230_e.rs"
+
+[[bin]]
 name = "abc232_a"
 path = "src/abc232_a.rs"
 
