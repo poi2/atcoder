@@ -1,49 +1,38 @@
-fn main() {
-    // let n = 1048576;
-    // input! {
-    //     q: usize,
-    // }
-    // let mut list: Vec<i128> = vec![-1; n + 1];
-    // let mut used: Vec<usize> = vec![];
+#![cfg_attr(debug_assertions, allow(dead_code, unused_imports))]
+use proconio::input;
+use std::collections::BTreeSet;
+use std::collections::HashMap;
 
-    // for _ in 1..=q {
-    //     input! {
-    //         t: usize,
-    //         x: usize
-    //     }
-    //     if t == 1 {
-    //         let mut h = x;
-    //         let mut amari = h % n;
-    //         match used.binary_search_by(|prob| prob.cmp(&amari).reverse() ) {
-    //             Ok(ans) => {
-    //                 println!("ok");
-    //                 list[ans] = x;
-    //                 used.insert(ans, ans)
-    //             },
-    //             Err(ans) => {
-    //                 println!("err, {}", ans);
-    //                 list[ans] = x;
-    //                 used.insert(ans, ans)
-    //             },
-    //         }
-    //         // loop {
-    //         //     match map.get(&amari) {
-    //         //         Some(_ans) => {
-    //         //             h += 1;
-    //         //             amari = h % n;
-    //         //         },
-    //         //         None => {
-    //         //             map.insert(amari, x);
-    //         //             break;
-    //         //         }
-    //         //     }
-    //         // }
-    //     } else {
-    //         let amari = x % n;
-    //         match map.get(&amari) {
-    //             Some(ans) => println!("{}", ans),
-    //             None => println!("-1"),
-    //         }
-    //     }
-    // }
+const MOD: usize = 1048576;
+
+fn main() {
+    input! {
+        q: usize,
+        queries: [(u8, usize); q],
+    }
+
+    // <_> と書いておくと型推論可能な範囲で解決してくれる
+    let mut set = (0..=MOD).collect::<BTreeSet<_>>();
+    let mut map = HashMap::new();
+
+    for &(t, x) in queries.iter() {
+        match t {
+            1 => {
+                let h = match *set.range((x % MOD)..).next().unwrap() {
+                    MOD => *set.range(0..).next().unwrap(),
+                    resp => resp,
+                };
+
+                set.remove(&h);
+                map.insert(h, x);
+            },
+            2 => {
+                match map.get(&(x % MOD)) {
+                    Some(&ans) => println!("{}", ans),
+                    None => println!("{}", -1),
+                }
+            },
+            _ => (),
+        }
+    }
 }
