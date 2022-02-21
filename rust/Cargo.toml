@@ -271,6 +271,10 @@ name = "abc240_d"
 path = "src/abc240_d.rs"
 
 [[bin]]
+name = "abc240_e"
+path = "src/abc240_e.rs"
+
+[[bin]]
 name = "abc240_f"
 path = "src/abc240_f.rs"
 
