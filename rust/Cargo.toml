@@ -263,6 +263,18 @@ name = "abc239_e"
 path = "src/abc239_e.rs"
 
 [[bin]]
+name = "abc240_c"
+path = "src/abc240_c.rs"
+
+[[bin]]
+name = "abc240_d"
+path = "src/abc240_d.rs"
+
+[[bin]]
+name = "abc240_f"
+path = "src/abc240_f.rs"
+
+[[bin]]
 name = "joi2009ho_b"
 path = "src/joi2009ho_b.rs"
 
