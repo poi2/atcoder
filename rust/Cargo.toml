@@ -441,3 +441,7 @@ path = "src/typical90_bz.rs"
 [[bin]]
 name = "typical90_ca"
 path = "src/typical90_ca.rs"
+
+[[bin]]
+name = "sieve"
+path = "src/sieve.rs"
