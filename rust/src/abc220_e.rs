@@ -5,8 +5,8 @@ fn main() {
     input! {
         n: usize, d: usize,
     }
-    const MOD: u128 = 998244353;
-    let mut pows = vec![0_u128; n.max(d) + 1];
+    const MOD: usize = 998244353;
+    let mut pows = vec![0_usize; n.max(d) + 1];
     pows[0] = 1;
     for i in 1..pows.len() {
         pows[i] = (pows[i - 1] * 2) % MOD;
@@ -20,7 +20,7 @@ fn main() {
         let top = pows[n - d] - 1;
         let left = pows[d];
         let right = 1;
-        ans += top * left * right;
+        ans += (top * left * right) % MOD;
         ans %= MOD;
     }
 
@@ -34,7 +34,7 @@ fn main() {
             let top = pows[n - max_depth] - 1;
             let left = pows[left_len - 1];
             let right = pows[right_len - 1];
-            ans += top * left * right;
+            ans += (((top * left) % MOD) * right) % MOD;
             ans %= MOD;
         }
     }
