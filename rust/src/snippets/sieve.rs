@@ -1,6 +1,6 @@
 use std::iter::empty;
 
-fn sieve(limit: usize) -> Box<dyn Iterator<Item = usize>> {
+pub fn sieve(limit: usize) -> Box<dyn Iterator<Item = usize>> {
     if limit < 2 { return Box::new(empty()) }
 
     let mut is_prime = vec![true; limit+1];
@@ -31,7 +31,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
+    fn test_sieve() {
         assert_eq!(sieve(10).collect::<Vec<usize>>(), vec![2, 3, 5, 7]);
     }
 }
