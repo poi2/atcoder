@@ -1,3 +1,4 @@
 pub mod sieve;
-pub mod fenwick_tree;
+pub mod ncr;
 pub mod multi_set;
+pub mod fenwick_tree;
