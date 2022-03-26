@@ -87,3 +87,27 @@ mod fenwicktree {
     }
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn fenwick_tree_works() {
+        let mut tree = fenwicktree::FenwickTree::new(5 * 10);
+        // [1, 2, 3, 4, 5]
+        for i in 1..6 {
+            tree.add(i as i64, i);
+        }
+        assert_eq!(tree.sum((0, 0)), 0);
+        assert_eq!(tree.sum((0, 1)), 1);
+        assert_eq!(tree.sum((0, 2)), 3);
+        assert_eq!(tree.sum((0, 3)), 0);
+        assert_eq!(tree.sum((0, 4)), 4);
+        assert_eq!(tree.sum((0, 5)), 1);
+        assert_eq!(tree.sum((1, 1)), 1);
+        assert_eq!(tree.sum((1, 2)), 3);
+        assert_eq!(tree.sum((1, 3)), 0);
+        assert_eq!(tree.sum((1, 4)), 4);
+        assert_eq!(tree.sum((1, 5)), 1);
+    }
+}
