@@ -14,7 +14,7 @@ fn main() {
         loop {
             let memo = f(i, j);
             if memo < n { break; }
-            ans = ans.min(f(i, j));
+            ans = ans.min(memo);
 
             if j == 0 { break; }
             j -= 1;
