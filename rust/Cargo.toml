@@ -436,6 +436,10 @@ name = "abc246_e"
 path = "src/abc246_e.rs"
 
 [[bin]]
+name = "abc299_c"
+path = "src/abc299_c.rs"
+
+[[bin]]
 name = "joi2009ho_b"
 path = "src/joi2009ho_b.rs"
 
